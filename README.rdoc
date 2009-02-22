@@ -1,11 +1,11 @@
-= About =
+= About
 
 I love using custom fields for themes/plugins, but parsing them is sometimes a bitch. This is a very simple wrapper for some
 wordpress functions that will return a nice formatted array for use with themes or other plugins.
 
 If you are big into custom fields and playing around with them, check this plugin out, it should make life a bit easier.
 
-= Examples =
+= Examples
 
 You have a post which has a bunch of images, but those images need titles, you can structure that in the post with custom fields like:
   
