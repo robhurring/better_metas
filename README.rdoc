@@ -9,7 +9,7 @@ If you are big into custom fields and playing around with them, check this plugi
 
 You have a post which has a bunch of images, but those images need titles, you can structure that in the post with custom fields like:
   
-*name*:: *value*
+*custom_field_name*:: *value*
 +images+:: src=image01.jpg&title=my house&description=this is my house
 +images+:: src=image02.jpg&title=mountain&description=some awesome mountains
 +images+:: src=image03.jpg&title=beach&description=a sandy beach
