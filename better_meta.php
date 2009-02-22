@@ -25,7 +25,7 @@ function meta($name = '')
 	global $post;
 	if($_ = get_post_meta($post->ID, $name, false))
     foreach($_ as $key => $value) 
-      if(stristr($value, '&'))
+      if(stristr($value, '='))
         $_[$key] = wp_parse_args($value);
 	return (is_array($_) && count($_) == 1) ? array_pop($_) : $_;
 }
