@@ -9,11 +9,11 @@ If you are big into custom fields and playing around with them, check this plugi
 
 You have a post which has a bunch of images, but those images need titles, you can structure that in the post with custom fields like:
   
-* +name+ : value
-* +images+ : src=image01.jpg&title=my house&description=this is my house
-* +images+ : src=image02.jpg&title=mountain&description=some awesome mountains
-* +images+ : src=image03.jpg&title=beach&description=a sandy beach
-* +images+ : sort=title&&lightbox=1&delay=0.5
+*name*:: *value*
++images+:: src=image01.jpg&title=my house&description=this is my house
++images+:: src=image02.jpg&title=mountain&description=some awesome mountains
++images+:: src=image03.jpg&title=beach&description=a sandy beach
++gallery_options+:: sort=title&&lightbox=1&delay=0.5
   
 You would get this array back:
 
