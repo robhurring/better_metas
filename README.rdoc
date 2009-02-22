@@ -1,0 +1,60 @@
+= About =
+
+I love using custom fields for themes/plugins, but parsing them is sometimes a bitch. This is a very simple wrapper for some
+wordpress functions that will return a nice formatted array for use with themes or other plugins.
+
+If you are big into custom fields and playing around with them, check this plugin out, it should make life a bit easier.
+
+= Examples =
+
+You have a post which has a bunch of images, but those images need titles, you can structure that in the post with custom fields like:
+  
+  * +name+ : value
+  * +images+ : src=image01.jpg&title=my house&description=this is my house
+  * +images+ : src=image02.jpg&title=mountain&description=some awesome mountains
+  * +images+ : src=image03.jpg&title=beach&description=a sandy beach
+  * +images+ : sort=title&&lightbox=1&delay=0.5
+  
+You would get this array back:
+
+  Array
+  (
+      [images] => Array
+          (
+              [0] => Array
+                  (
+                      [src] => image01.jpg
+                      [title] => my house
+                      [description] => this is my house
+                  )
+
+              [1] => Array
+                  (
+                      [src] => image03.jpg
+                      [title] => beach
+                      [description] => a sandy beach
+                  )
+
+              [2] => Array
+                  (
+                      [src] => image02.jpg
+                      [title] => mountain
+                      [description] => some awesome mountains
+                  )
+
+          )
+
+      [gallery_options] => Array
+          (
+              [sort] => title
+              [lightbox] => 1
+              [delay] => 0.5
+          )
+
+  )
+  
+Pretty convenient, no? To get a single custom field use +meta(_key_)+:
+
+  meta('gallery_options') => array('sort' => 'title', 'lightbox' => 1, 'delay' => 0.5)
+  
+Now you can use this within other plugins, or themes, or wherever.  
