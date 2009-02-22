@@ -55,6 +55,6 @@ You would get this array back:
   
 Pretty convenient, no? To get a single custom field use +meta(_key_)+:
 
-+meta('gallery_options')+:: array('sort' => 'title', 'lightbox' => 1, 'delay' => 0.5)
+  meta('gallery_options') => array('sort' => 'title', 'lightbox' => 1, 'delay' => 0.5)
   
 Now you can use this within other plugins, or themes, or wherever.  
