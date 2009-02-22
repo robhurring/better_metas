@@ -75,7 +75,8 @@ function metas()
 function meta_key_exist($key = '')
 {
   global $post;
-  return in_array($key, get_post_custom_keys($post->ID));
+  $_ = get_post_custom_keys($post->ID);
+  return is_array($_) ? in_array($key, $_) : false;
 }
 
 
